@@ -1,3 +1,3 @@
 git add . 
-git commit -m "web"  
+git commit -m "upload"  
 git push
