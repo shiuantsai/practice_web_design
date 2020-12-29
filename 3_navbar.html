@@ -12,24 +12,20 @@
     <style class="text/css">
       .jumbotron{
         background: url("https://picsum.photos/1920/400?random=1") no-repeat center center / cover;
-        margin-bottom: 0 <!--拿掉下方間距-->
+        margin-bottom: 0;
+        <!--拿掉下方間距-->
       }
       .path{
         background-color: #ccc;
       }
       .path .breadcrumb{
         background-color: transparent;
-        style="color:red;"
-      }
-      .breadcrumb-item active{
-        color:#a944442;
       }
 
     </style>
 
   </head>
   <body>
-
 
     <!--navbar導覽列-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -90,6 +86,87 @@
         </nav>
       </div>
     </div>
+
+    <!--做兩欄畫面-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action active">
+                Cras justo odio
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+              <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+              <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+              <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+            </div>
+        </div>
+            <div class="col-12 col-md-9">
+                <h1>title</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+            </div>
+
+
+            <div class="row">
+
+              <div class="col-12 col-md-3">
+                <div class="item">
+                  <img src="https://picsum.photos/300/200?random=31" class="img-fluid">
+                  <h3>title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="item">
+                  <img src="https://picsum.photos/300/200?random=32" class="img-fluid">
+                  <h3>title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="item">
+                  <img src="https://picsum.photos/300/200?random=33" class="img-fluid">
+                  <h3>title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="item">
+                  <img src="https://picsum.photos/300/200?random=34" class="img-fluid">
+                  <h3>title</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div>
+              <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+      </div>
+
+    </div>
+
+
+
+
+
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
