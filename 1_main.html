@@ -1,9 +1,14 @@
+ <!--
+ row可以切好幾欄
+container-fluid跟視窗一樣大
+-->
+
 <!Doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <!--RWD -->
+    <!--RWD  指定螢幕寬度為裝置寬度，畫面載入初始縮放比例 100%-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
@@ -19,21 +24,24 @@
   <body>
 
     <h1>Hello, world!</h1>
-
+    <!--滿版-->
     <div class="container-fluid">
       <div class = "row">
 
-        <div class = "col12 aa">
+        <!--平板橫時佔12欄-->
+        <div class = "col12 col-md-12 aa">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class = "col12 bb">
+        <!--平板橫時佔6欄-->
+        <div class = "col12 col-md-6 bb">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
           dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
-        <div class = "col12 cc">
+        <!--平板橫時佔6欄-->
+        <div class = "col12 col-md-6 cc">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </div>
       </div>
