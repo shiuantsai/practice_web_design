@@ -8,31 +8,37 @@
       width:200px;
       height:200px;
       display: inline-block;
-      background-color:black;
+      background-color:#aaa;
+
     }
     .box-b{
       width:200px;
       height:200px;
       display: inline-block;
-      background-color:red;
+      background-color:#faa;
     }
 
   </style>
 
 </head>
 
-<body
+<body>
 
   <div class="box-a">box-a</div>
   <div class="box-b">box-b</div>
 
 
 
-
+  <!--jquery API使用 -->
   <!--JS寫在body裡，不要寫在head裡，因為剛開始load不會用到js，所以寫在body可以增加效能-->
   <script src="js/jquery.min.js"></script>
   <script type="text/javascript">
-  $(document).ready(function())
+  $(document).ready(function(){
+    $(".box-a").dblclick(function(){
+      //toggle會自動判斷目前是隱藏還顯示
+      $(".box-b").toggle();
+    })
+  })
     //..做事的位置
 
 
