@@ -1,3 +1,11 @@
+<!--
+jqeury.min.js下載點
+https://developers.google.com/speed/libraries#jquery
+再去jquery找3.x版，複製網址，ctrl+s儲存成檔案
+
+jquery有哪些API可以call
+jquery官網 > API Documentation
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,7 +25,15 @@
       display: inline-block;
       background-color:#faa;
     }
-
+    .product-title{
+      background-color: #000;
+      color: #fff;
+      padding:10px;
+      cursor: pointer;
+    }
+    .content{
+      display: none;
+    }
   </style>
 
 </head>
@@ -27,6 +43,14 @@
   <div class="box-a">box-a</div>
   <div class="box-b">box-b</div>
 
+  <div class="product-title">
+    產品介紹
+  </div>
+  <div class="content">
+    此產品的詳細內容與介紹
+  </div>
+
+
 
 
   <!--jquery API使用 -->
@@ -34,11 +58,17 @@
   <script src="js/jquery.min.js"></script>
   <script type="text/javascript">
   $(document).ready(function(){
-    $(".box-a").dblclick(function(){
+
+    $('.box-a').dblclick(function(){
       //toggle會自動判斷目前是隱藏還顯示
-      $(".box-b").toggle();
+      $('.box-b').toggle();
     })
-  })
+
+    $('.product-title').click(function(){
+      $('.content').toggle();
+    })
+
+})
     //..做事的位置
 
 
