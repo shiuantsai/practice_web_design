@@ -16,3 +16,6 @@ https://getbootstrap.com/docs/4.5/getting-started/introduction/
 boostrap把版面預設切成12等份
 所以若要手機直的滿版:
 col-12
+
+//
+margin是調整border外的邊界；padding則是調整border內到內文之間的距離
