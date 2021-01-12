@@ -1,0 +1,26 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+h1{
+  color:#fa0;
+  font-size: 60px;
+}
+nav{
+  background-color: #000;
+  text-align: center;
+  font-size:0px;
+}
+nav a{
+  color:#fff;
+  text-decoration: none; /*超連結無樣式*/
+  display: inline-block; /**/
+  padding: 6px 20px; /*上下6px 左右20px*/
+  font-size: 18px;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+nav a:hover{
+  background-color: #fa0;
+}
