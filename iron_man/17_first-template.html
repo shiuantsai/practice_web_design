@@ -7,34 +7,42 @@
   <link rel="stylesheet" href="reset.css">
   <style type="text/css">
     .header{
-      display:flex;
+      display:flex;  /* 讓超連結跟圖片放在一起 */
       padding: 6px 10px;
       background-color: #000;
     }
     .header nav{
       text-align: right;
+      width: 100%;
+
     }
-    .header nav a {
+    .header img{
+      /* opacity: 0.1; */
+    }
+    /* .header nav{
+      text-align: right;
+    } */
+    /* .header nav a {
       display: inline-block;
       line-height: 52px;
-    }
+    } */
 
   </style>
   <title>Document</title>
 </head>
 <body>
-  <div class="header">
-    <a href="#"><img src="https://picsum.photos/80/40?random=1" alt=""></a>
-
-    <!-- 導覽列 -->
-    <nav>
-      <a href="#">關於我們</a>
-      <a href="#">最新消息</a>
-      <a href="#">產品清單</a>
-      <a href="#">服務</a>
-      <a href="#">聯絡我們</a>
-      <a href="#">網站地圖</a>
-    </nav>
+    <div class="header">
+      <a href="#"><img src="https://picsum.photos/80/40?random=1" alt=""></a>
+      <!-- 導覽列 -->
+      <nav>
+        <a href="#">關於我們</a>
+        <a href="#">最新消息</a>
+        <a href="#">產品清單</a>
+        <a href="#">服務</a>
+        <a href="#">聯絡我們</a>
+        <a href="#">網站地圖</a>
+      </nav>
+    </div>
 
     <!-- 滿版內容區 -->
     <div class="banner">
@@ -50,7 +58,6 @@
 
     <div class="about">
       <div class="wrap">
-
         <div class="item">
         <img src="https://picsum.photos/50/50?random=10">
         <h3>title</h3>
@@ -66,11 +73,9 @@
         <h3>title</h3>
         <p>產品的介紹3</p>
         </div>
-
       </div>
     </div>
 
-  </div>
 
 
 
